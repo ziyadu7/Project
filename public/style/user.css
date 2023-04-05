@@ -204,6 +204,41 @@
     display: none;
 }
 
+/*======================
+    404 page
+=======================*/
+
+
+.page_404{ 
+	padding:40px 0; background:#fff; font-family: 'Arvo', serif;
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+ background-image: url('https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif');
+    height: 440px;
+    background-position: center;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+  .four_zero_four_bg h3{
+			 font-size:80px;
+			 }
+			 
+			 .link_404{			 
+	color: #fff!important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;}
+	.contant_box_404{ margin-top:-50px;}
+
 /* Products */
 
 .product {
@@ -464,7 +499,7 @@ label.radio input:checked+span{
 
 
 .backgrnd {
-	background-image:url('https://wallpapercrafter.com/desktop/12114-legs-sneakers-tattoo-bw-style-fashion-4k.jpg');
+	background-image:url('https://wallpaperset.com/w/full/0/e/f/156394.jpg');
 	background-position:center;
 	background-size:cover;
 	height: 100vh;
@@ -2209,6 +2244,45 @@ ol {
 	border-color: #0d0d0d;
 	color: #ffffff;
 }
+
+/* ---------------------
+New Cart
+------------------------ */
+
+@media (min-width: 1025px) {
+	.h-custom {
+	height: 100vh !important;
+	}
+	}
+	
+	.card-registration .select-input.form-control[readonly]:not([disabled]) {
+	font-size: 1rem;
+	line-height: 2.15;
+	padding-left: .75em;
+	padding-right: .75em;
+	}
+	
+	.card-registration .select-arrow {
+	top: 13px;
+	}
+	
+	.bg-grey {
+	background-color: #eae8e8;
+	}
+	
+	@media (min-width: 992px) {
+	.card-registration-2 .bg-grey {
+	border-top-right-radius: 16px;
+	border-bottom-right-radius: 16px;
+	}
+	}
+	
+	@media (max-width: 991px) {
+	.card-registration-2 .bg-grey {
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+	}
+	}
 
 /*---------------------
   Product Details

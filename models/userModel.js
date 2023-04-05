@@ -35,7 +35,10 @@ const userSchema = mongoose.Schema({
     },wishlist:[{
         type:mongoose.Schema.Types.ObjectId,
         ref:'Products'
-    }]
+    }],wallet:{
+        type:Number,
+        required:true
+    }
 })
 
 module.exports = mongoose.model('User',userSchema)

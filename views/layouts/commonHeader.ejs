@@ -52,12 +52,9 @@
 <div class="offcanvas-menu-wrapper">
     <div class="offcanvas__close">+</div>
     <ul class="offcanvas__widget">
-        <li><span class="icon_search search-switch"></span></li>
         <li><a href="/wishlist"><span class="icon_heart_alt"></span>
-            <div class="tip">2</div>
         </a></li>
         <li><a href="/cart"><span class="icon_bag_alt"></span>
-            <div class="tip">2</div>
         </a></li>
     </ul>
     <div class="offcanvas__logo">
@@ -67,7 +64,6 @@
     <div class="offcanvas__auth">
         <% if(session!=null){
             %>
-           <a class="dropdown-item" href="/userProfile">Profile</a>
            <a class="dropdown-item" href="/logout">Logout</a>
            <% }else{%>
                <a class="dropdown-item" href="/login">Login</a>
@@ -94,46 +90,42 @@
                         <a class="" href="/shopPage">Shop</a>
                     </div>
                     <div class="col-2">
-                        <a href="/contactPage">Contact</a>
+                        <a href="/userProfile">Profile</a>
                     </div>
                 </nav>
             </div>
             <div class="col-lg-4 col-md-4 ">
-                <div class="header__right row ">
-                    <div class="col ">
-                        <ul class="header__right__widget ">
-                            <li><span class="icon_search search-switch"></span></li>
-                            <li><a href="/wishlist" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="/cart" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
-                    </div>
-                    <div class="header__right__auth col">
-                        <div class="btn-group">
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" viewBox="0 0 24 24">
-                                    <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
-                                        <path
-                                            d="M16 9a4 4 0 1 1-8 0a4 4 0 0 1 8 0Zm-2 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0Z" />
-                                        <path
-                                            d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1ZM3 12c0 2.09.713 4.014 1.908 5.542A8.986 8.986 0 0 1 12.065 14a8.984 8.984 0 0 1 7.092 3.458A9 9 0 1 0 3 12Zm9 9a8.963 8.963 0 0 1-5.672-2.012A6.992 6.992 0 0 1 12.065 16a6.991 6.991 0 0 1 5.689 2.92A8.964 8.964 0 0 1 12 21Z" />
-                                    </g>
-                                </svg>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <% if(session!=null){ 
-                                    %>
-                                    <li><a class="dropdown-item" href="/userProfile">Profile</a></li>
-                                    <li><a class="dropdown-item" href="/logout">Logout</a></li>
-                                    <% }else{%>
-                                        <li><a class="dropdown-item" href="/login">Login</a></li>
-                                        <li><a class="dropdown-item" href="/signup">Signup</a></li>
-                                        <%}%>
-                            </ul>
+                    <div class="header__right row ">
+                        <div class="header__right__auth col">
+                            <div class="btn-group">
+                                <ul class="header__right__widget mt-2 mr-3">
+                                    <li><a href="/wishlist" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><span class="icon_heart_alt"></span></a></li>
+                                    <li><a href="/cart" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><span class="icon_bag_alt"></span></a></li>
+                                </ul>
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24">
+                                        <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
+                                            <path
+                                                d="M16 9a4 4 0 1 1-8 0a4 4 0 0 1 8 0Zm-2 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0Z" />
+                                            <path
+                                                d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1ZM3 12c0 2.09.713 4.014 1.908 5.542A8.986 8.986 0 0 1 12.065 14a8.984 8.984 0 0 1 7.092 3.458A9 9 0 1 0 3 12Zm9 9a8.963 8.963 0 0 1-5.672-2.012A6.992 6.992 0 0 1 12.065 16a6.991 6.991 0 0 1 5.689 2.92A8.964 8.964 0 0 1 12 21Z" />
+                                        </g>
+                                    </svg>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <% if(session!=null){
+                                         %>
+                                        <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                                        <% }else{%>
+                                            <li><a class="dropdown-item" href="/login">Login</a></li>
+                                            <li><a class="dropdown-item" href="/signup">Signup</a></li>
+                                            <%}%>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
         <div class="canvas__open">
             <i class="fa fa-bars"></i>
